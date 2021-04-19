@@ -1,22 +1,19 @@
 $(document).ready(function(){
   console.log("Il DOM è stato caricato");
 
-  var bottone = $('.hamburger-menu')
-
-  bottone.click(function() {
-    bottone.className() = bottone.classList + 'active'
-    console.log('click');
-  })
-
-  /* var aperto = true
+  var bottone = $('.fas')
+  var hamburger = $('.hamburger-menu')
+  var aperto = false
 
   bottone.click(function() {
     if(aperto){
-      bottone.className() = bottone.classList - 'active'
+      hamburger.removeClass('active')
+      console.log('click')
     }else{
-      bottone.className() = bottone.classList + 'active'
+      hamburger.addClass('active')
+      console.log('click')
     }
 
     aperto = !aperto;
-  }) */
+  })
 })
